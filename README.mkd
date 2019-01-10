@@ -1,0 +1,60 @@
+# Statistiques cagnotte police
+Petit projet, suite à [un soupçon](https://twitter.com/EPrivilegie/status/1083126705068351493) de gonflement automatique via des bots de la cagnotte pour la police. Plusieurs doublons ont été détectés.
+
+Les données parsées sont disponibles [ici](https://docs.google.com/spreadsheets/d/1k4bd3g6NAui1aTDc6eiIUToPo_pABEnil7l6cW_0wck/edit#gid=1086360266), d'après les auteurs.
+Je ne sais pas comment elles ont été obtenues (mais probablement avec un petit script).
+
+## Étude 1: répétitions
+fichier: [`repetitions.py`](repetitions.py)
+
+Ressortant quelque chose comme:
+
+    Nombre de message pour les auteurs les plus prolifiques:
+        Anonyme: 788
+        Brigitte Bruneteau: 1
+        Claire: 2
+        Daniel VALENTIN: 2
+        Emilien LEFRANCOIS: 2
+        Eric: 2
+        Ermine James: 2
+        Florence Tantin: 2
+        Jean-Claude PUYDEBOIS: 2
+        Laurent de Montpellier: 2
+        Margarida Bechade: 2
+        Marie FRANCE: 2
+        Nicole Lemoine: 2
+        Olga Le Corre: 2
+        Patrice: 2
+        Philippe: 2
+        Romain Malange: 2
+        Sierra Charlie: 2
+        paulette sidoine: 2
+        robin: 2
+    Nombre de message UNIQUE pour les auteurs les plus prolifiques:
+        Anne-Marie Heitzmann: 1
+        Anonyme: 769
+        Brigitte Bruneteau: 1
+        Christophe Gnd: 1
+        Claire: 2
+        Claude Bellenger: 1
+        Eric: 2
+        Ermine James: 2
+        Jean-Claude PUYDEBOIS: 2
+        Loïc Desbiolles: 1
+        MARTIAL ANNEREAU: 1
+        Marie FRANCE: 2
+        Nicole Lemoine: 2
+        Pascal PELLET: 1
+        Philippe: 2
+        SC MA: 1
+        Thierry Rottier: 1
+        ric Gaut: 1
+        riffard john: 1
+        robin: 2
+
+Contrairement aux observations indiquées en tweet, certains noms n'apparaissent pas, par exemple [François Pianaro](https://twitter.com/EPrivilegie/status/1083126705068351493).
+Possibles explications:
+
+- malfaçon des données parsées (les données en csv ne sont pas les bonnes)
+- malfaçon des images (les images en tweet sont fausses)
+- usage de méthodes de *character concealing*, consistant à placer des caractères unicode invisible qui font que deux textes a priori identiques sont en réalité différents pour un ordinateur.
