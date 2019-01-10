@@ -4,6 +4,21 @@ Petit projet, suite à [un soupçon](https://twitter.com/EPrivilegie/status/1083
 Les données parsées sont disponibles [ici](https://docs.google.com/spreadsheets/d/1k4bd3g6NAui1aTDc6eiIUToPo_pABEnil7l6cW_0wck/edit#gid=1086360266), d'après les auteurs.
 Je ne sais pas comment elles ont été obtenues (mais probablement avec un petit script).
 
+## Autres études à réaliser
+
+- orthographe uniforme (même (absence de) fautes ?)
+
+
+## Étude 2: vocabulaire
+fichier: [`message_cloud.py`](message_cloud.py)
+
+Génération d'un wordcloud présentant le vocabulaire le plus utilisé dans les commentaires.
+
+Résultat:
+
+![wordcloud du vocabulaire](out/message-cloud.png)
+
+
 ## Étude 1: répétitions
 fichier: [`repetitions.py`](repetitions.py)
 
@@ -51,6 +66,9 @@ Ressortant quelque chose comme:
         ric Gaut: 1
         riffard john: 1
         robin: 2
+
+On trouve 18 auteurs ayant participé deux fois, dont 11 avec le même texte. La présence d'un auteur à 1 seul texte dans le premier cas
+montre qu'il s'agit bien des seuls doublons. «Anonyme» est évidemment hors-concours.
 
 Contrairement aux observations indiquées en tweet, certains noms n'apparaissent pas, par exemple [François Pianaro](https://twitter.com/EPrivilegie/status/1083126705068351493).
 Possibles explications:
