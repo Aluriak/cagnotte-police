@@ -7,6 +7,7 @@ Je ne sais pas comment elles ont été obtenues (mais probablement avec un petit
 ## Autres études à réaliser
 
 - orthographe uniforme (même (absence de) fautes ?)
+- comparaison avec d'autres cagnottes qui ne sont pas politiquement remises en cause
 
 
 ## Étude 2: vocabulaire
@@ -24,6 +25,9 @@ fichier: [`repetitions.py`](repetitions.py)
 
 Ressortant quelque chose comme:
 
+    Nombre d'auteurs: 2187
+    Nombre de messages: 2992
+    Nombre de messages différents: 2826
     Nombre de message pour les auteurs les plus prolifiques:
         Anonyme: 788
         Brigitte Bruneteau: 1
@@ -69,10 +73,14 @@ Ressortant quelque chose comme:
 
 On trouve 18 auteurs ayant participé deux fois, dont 11 avec le même texte. La présence d'un auteur à 1 seul texte dans le premier cas
 montre qu'il s'agit bien des seuls doublons. «Anonyme» est évidemment hors-concours.
+Notons aussi certains noms génériques («Eric»), potentiellement juste une collision de nom.
+
+Il apparaît globalement que les doublons, tant en auteur qu'en message, sont en proportion relativement faibles.
 
 Contrairement aux observations indiquées en tweet, certains noms n'apparaissent pas, par exemple [François Pianaro](https://twitter.com/EPrivilegie/status/1083126705068351493).
 Possibles explications:
 
+- données parsées non à jour (plausible, puisque le site est en mise à jour constante, pour ajouter les nouveaux dons et retirer éventuellement les doublons techniques)
 - malfaçon des données parsées (les données en csv ne sont pas les bonnes)
 - malfaçon des images (les images en tweet sont fausses)
 - usage de méthodes de *character concealing*, consistant à placer des caractères unicode invisible qui font que deux textes a priori identiques sont en réalité différents pour un ordinateur.
